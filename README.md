@@ -12,14 +12,16 @@
 ## Expectations
 
 - Zed should format JS, JSON, and Vue on save
-- It should format with tabs (see biome.json and Biome default - all "wrong" indentations should be visible through `"tab_size": 5`)
-- Biome should use single quotes `'` instead of double quotes `"`
+- It should format with tabs (see biome.json and [Biome defaults](https://biomejs.dev/reference/configuration/#formatterindentstyle) - all "wrong" indentations should be visible in the editor through `"tab_size": 5`)
+- Biome should use single quotes `'` instead of double quotes `"` for JS files
 
-## Test1
+---
+
+## Test 1
 
 - Open [`test1.js`](./test1.js)
 - Make a change and save
-- Expected: File should be formatted with tabs
+- Expected: File should be formatted with tabs, imports should be reorganized
 - On my setup: nothing
 
 Run this to actually see Biome in action (via CLI):
@@ -30,11 +32,13 @@ bunx biome format test1.js --write
 
 This should format indentations with tabs and use single quotes.
 
-## Test2
+---
+
+## Test 2
 
 - Open [`test2.vue`](./test2.vue)
 - Make a change and save
-- Expected: File should be formatted with tabs, `<template> should be mainted ([biomejs.dev/internals/language-support/#html-super-languages-support](https://biomejs.dev/internals/language-support/#html-super-languages-support))
+- Expected: File should be formatted with tabs, `<template>` should be maintained ([biomejs.dev/internals/language-support/#html-super-languages-support](https://biomejs.dev/internals/language-support/#html-super-languages-support))
 - On my setup: nothing
 
 Run this to actually see Biome in action (via CLI):
