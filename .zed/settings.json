@@ -1,0 +1,38 @@
+{
+     "hard_tabs": true,
+     "tab_size": 5,
+     "show_whitespaces": "all",
+     "formatter": "language_server",
+     "format_on_save": "on",
+     "code_actions_on_format": {
+          "source.fixAll.biome": true,
+          "source.organizeImports.biome": true
+     },
+     "languages": {
+          "JavaScript": {
+               "language_servers": [
+                    "biome",
+                    "!typescript-language-server",
+                    "!prettier",
+                    "!eslint",
+                    "..."
+               ]
+          },
+          "TypeScript": {
+               "language_servers": [
+                    "biome",
+                    "!typescript-language-server",
+                    "!prettier",
+                    "!eslint",
+                    "..."
+               ]
+          },
+          "Vue.js": {
+               "language_servers": [
+                    "biome",
+                    "!eslint",
+                    "..."
+               ]
+          }
+     }
+}
